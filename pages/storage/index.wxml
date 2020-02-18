@@ -1,0 +1,6 @@
+<!--pages/storage/index.wxml-->
+<view>
+  <input bind:confirm="saveWord" class="weui-input" auto-focus placeholder="将会获取焦点" />
+  <text>下面是历史数据显示：</text>
+  <view wx:for="{{historyArr}}">{{item}}</view>
+</view>

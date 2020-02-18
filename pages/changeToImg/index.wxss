@@ -1,0 +1,76 @@
+canvas{
+  /* position: fixed;
+  top: 0;
+  left: 400px; */
+}
+.share{
+  position: absolute;
+  bottom: 100rpx;
+  width: 70%;
+  left: 15%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.preview {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+  position: absolute;
+  z-index: 2;
+}
+.previewImg{
+  width: 70%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 3;
+  border: 1px dashed #fff;
+}
+.preview button{
+  width: 40%;
+  position: absolute;
+  bottom: 100rpx;
+  left: 30%;
+}
+ 
+page{
+  width: 100%;
+  height: 100%;
+}
+ 
+.originalView{
+  width: 100%;
+  height: 100%;
+}
+ 
+.chengjidan{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+ 
+.transcript{
+  width: 240px;
+  height: 185px;
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+  top: 100rpx;
+} 
+ 
+.seal{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 10%;
+  bottom: 200rpx;
+}
+ 
+.userScoreInfo{
+  position: absolute;
+  width: 60%;
+  margin-left: 20%;
+  text-align: left;
+  top: 50%;
+}

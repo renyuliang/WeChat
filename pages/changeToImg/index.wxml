@@ -1,0 +1,15 @@
+
+<canvas canvas-id="shareImg" style="width:100%;height:100%;" bindtouchstart="start" bindtouchmove="move"></canvas>
+
+<!-- 
+<view class='originalView'>
+   <view class='userScoreInfo'>
+     <text class='name'>姓名：我我我\n</text>
+     <text class='IDCard'>身份证：xxxxxxxxxxx\n</text>
+     <text class='info'>其他信息：xxxxxxxxxxx</text>
+   </view>
+</view> -->
+ 
+ <view class='am-footer'>
+      <button bindtap='save'>保存图片</button>
+  </view>

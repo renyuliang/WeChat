@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="viewMove">
+  <view class="doommview">
+    <block wx:for="{{doommData}}" wx:key="id" wx:if="{{item.display}}">
+      <view class="aon" style="animation: first {{item.time}}s linear forwards;top:{{item.top}}px;">
+        <view class='avatarBox'>
+          <image src='{{ item.text.sex == 0 ? avatarBoy : avatarGirl }}' class='avatar' mode='aspectFit'></image>
+          <image src='{{ item.text.sex == 0 ? iconBoy : iconGirl }}' class='sex' mode='aspectFit'></image>
+        </view>
+        <text class="content ellipsis">{{item.text.content}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+<view class="button">
+  <button bindtap="bindbt">弹一个弹幕</button>
+</view>

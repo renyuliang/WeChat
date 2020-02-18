@@ -1,0 +1,17 @@
+/* 全局样式 */
+page{
+  /* 苹果通用字体 细体 */
+  font-family: "PingFangSC-Thin";
+  font-size: 32rpx;
+  height: 100vh; 
+  background: #f6f6f6; 
+  color: #333; 
+  box-sizing: border-box; 
+}
+view, text, scroll-view, swiper, button, form, input, textarea, label, navigator, image { box-sizing: border-box; }
+
+.clearfix { zoom: 1; clear:both;}
+.clearfix:after { clear: both; content: ""; display: block; height: 0; visibility: hidden; }
+
+.ellipsis{ white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+button::after{ border: 0;}

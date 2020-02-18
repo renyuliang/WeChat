@@ -1,0 +1,36 @@
+/* components/loading/index.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #3063b2;
+}
+.moveing{
+  animation: loadmove 1s linear 0s infinite alternate;
+  -webkit-animation: loadmove 1s linear 0s infinite alternate;
+}
+@-webkit-keyframes loadmove {
+  0%,100% {
+    -webkit-transform: scale(0.5);
+  }
+  50%{
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes loadmove {
+  0%,100% {
+    transform: scale(0.5);
+  }
+  50%{
+    transform: scale(1);
+  }
+}

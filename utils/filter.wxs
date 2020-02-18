@@ -1,0 +1,25 @@
+var format = function(text){
+  if (!text) {
+    return
+  }
+  return '&nbsp;&nbsp;我在utils下的filter.wxs中'
+}
+// 过滤器,动态显示一个数据组指定的前几个数据
+var limit = function (arr,length) {
+  return arr.slice(0,length)
+}
+module.exports = {
+  format: format,
+  limit: limit
+}
+
+// 在wxml中调用
+// 引用
+// <wxs src='相对路径' module="自己定义,如:format"/>
+// // 调用
+// <text>{{format.format(123)}}</text>
+
+// 需要解析 其他转义字符时，如&nbsp;时，需要开启属性
+// <text decode="{{true}}"> {{format.format(123)}}</text>
+
+// 如其他的辅助操作，如过滤器，则可写在wxs中

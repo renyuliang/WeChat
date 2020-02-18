@@ -1,0 +1,94 @@
+/**index.wxss**/
+
+.button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.aon {
+  position: absolute;
+  white-space: nowrap;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  flex-direction: row;
+  z-index: 99;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 15rpx 0 5rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #fff;
+}
+.viewMove{
+  width: 100%;
+  position: fixed;
+  
+  height: 40%;
+  overflow: hidden;
+  margin: 20rpx;
+}
+.doommview {
+  /* width: 100%;
+  position: fixed;
+  background: #eee;
+  box-shadow: 0 0 10rpx #eee;
+  border-radius: 10rpx; */
+  background: #eee;
+  box-shadow: 0 0 10rpx #eee;
+  border-radius: 10rpx;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* margin: 20rpx; */
+
+}
+
+@keyframes first {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+
+.avatarBox {
+  display: inline-block;
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.avatarBox .avatar {
+  width: 40rpx;
+  height: 40rpx;
+  border: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.sex {
+  position: absolute;
+  left: 25rpx;
+  top: 18rpx;
+  width: 22rpx;
+  height: 22rpx;
+  overflow: hidden;
+}
+
+.content {
+  display: inline-block;
+  max-width: 440rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-right: 10rpx;
+}

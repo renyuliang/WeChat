@@ -1,0 +1,22 @@
+<!--pages/dialogModal/index.wxml-->
+<view>
+  <button type='default' plain bindtap='showTips'>提示</button>
+</view>
+<view>
+  <button type='default' plain bindtap='showLoad'>加载</button>
+</view>
+<view>
+  <button type='default' plain bindtap='showModal'>询问</button>
+</view>
+<view>
+  <button type='default' plain bindtap='showAction'>底部弹层 操作</button>
+</view>
+<view>
+  <button type='default' plain bindtap='showInitDialog'>自定义弹层</button>
+</view>
+<!-- 自定义弹层 -->
+<init-modal showModal='{{showTapModal}}' title="{{title}}" bindcancel="modalCancel" bindconfirm='modalConfirm' cacelText="{{initCancelText}}" confirmText="{{initConfirmText}}" showBtn="{{showBtn}}" single='{{single}}'>
+  <view slot="content">
+      <view>老师积分数量的看附件塑料袋就弗兰克就当是浪费跨境电商了富家大室联发科几档上量发就是的分</view>
+  </view>
+</init-modal>

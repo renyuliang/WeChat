@@ -1,0 +1,2 @@
+<!--pages/getOption/index.wxml-->
+<text>接收丛上一个页面传入的值是：{{getId}}</text>

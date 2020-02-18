@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-heart":"/components/heart/index",
+    "v-nav":"/components/nav/index",
+    "v-music": "/components/music/index"
+  }
+}

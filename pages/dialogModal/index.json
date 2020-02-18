@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "init-modal": "/components/init-dialog/index"
+  }
+}

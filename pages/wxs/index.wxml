@@ -1,0 +1,8 @@
+<!--pages/wxs/index.wxml-->
+<wxs src="../../utils/filter.wxs" module="untils" />
+<block wx:for="{{untils.limit(list,2)}}" wx:key="index">
+  <view>
+    <text decode="{{true}}">{{untils.format(item.name)}}</text>
+  </view>
+</block>
+<!-- 可在wxml中 调用 wxs js代码 -->

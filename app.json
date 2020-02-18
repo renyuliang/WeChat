@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/classIc/classIc",
+    "pages/promise/index",
+    "pages/getOption/index",
+    "pages/wxs/index",
+    "pages/storage/index",
+    "pages/rollBottom/index",
+    "pages/toUserInfo/index",
+    "pages/outer/index",
+    "pages/waterfall/index",
+    "pages/dialogModal/index",
+    "pages/changeToImg/index"
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/classIc/classIc",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/promise/index",
+        "text": "promise http应用"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffff00",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序深入理解",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap4.json"
+}

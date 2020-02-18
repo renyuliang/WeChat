@@ -1,0 +1,10 @@
+/* pages/rollBottom/index.wxss */
+.center{
+  /* justify-content: center; */
+  position: absolute;
+  top:50%;
+  left: 50%;
+}
+.bottom{
+  margin-bottom: 20rpx;
+}

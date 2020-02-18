@@ -1,0 +1,8 @@
+<!--components/nav/index.wxml-->
+<view class="navBody">
+  <view class="container">
+    <image class="icon" bindtap="onPrev" src="{{first?disleftImg:leftImg}}"/>
+    <text class="title">{{title}}</text>
+    <image class="icon" bindtap="onNext" src="{{last?disrightImg:rightImg}}"/>
+  </view>
+</view>

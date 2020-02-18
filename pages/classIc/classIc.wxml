@@ -1,0 +1,35 @@
+<view>
+  <!-- like 表示 是否点赞，count 表示 点赞次数 -->
+  <v-heart like="{{like}}" count="{{count}}" bind:like='clickLike'/>
+</view>
+<view>
+  <v-nav title="{{title}}" first="{{first}}" last="{{last}}" lastIndex="{{lastIndex}}" bind:prev="onPrev" bind:next="onNext"/>
+</view>
+<view>
+  <v-music src="{{musicSrc}}" title="{{musicTitle}}" srcIndex="{{musicIndex}}" srctotal="{{musicTotal}}" imgUrl="{{musicImgUrl}}" bind:musicPrev="musicPrev" bind:musicNext="musicNext"/>
+</view>
+
+<view>
+  <button bindtap="toWXS">wxs应用</button>
+</view>
+<view>
+  <button bindtap="toStorage">缓存demo</button>
+</view>
+<view>
+  <button bindtap="toRoll">滚动到底部</button>
+</view>
+<view>
+  <button bindtap="toUserInfo">获取用户信息</button>
+</view>
+<view>
+  <button bindtap="tobaidu">小程序 应用h5</button>
+</view>
+<view>
+  <button bindtap="towaterfall">瀑布流效果（弹幕循环展示）</button>
+</view>
+<view>
+  <button bindtap="tomodal">常用弹出层和提示信息</button>
+</view>
+<view>
+  <button bindtap="tochangeImg">转化页面为图片保存</button>
+</view>

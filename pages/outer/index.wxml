@@ -1,0 +1,3 @@
+<!--pages/outer/index.wxml-->
+<!-- 暂不支持个人小程序 -->
+<web-view src="https://www.baidu.com/"></web-view>

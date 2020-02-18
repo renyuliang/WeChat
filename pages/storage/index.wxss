@@ -1,0 +1,8 @@
+/* pages/storage/index.wxss */
+.weui-input{
+  /* width: 100%; */
+  margin: 5%;
+  padding:1% 4%;
+  border:1px solid #ccc;
+  border-radius: 20rpx;
+}

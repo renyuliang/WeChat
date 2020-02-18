@@ -1,0 +1,12 @@
+<!--components/music/index.wxml-->
+<view class="container">
+  <view class="title">{{title}}</view>
+  <view class="img">
+    <image class="back {{playing?'playIng':'paused'}}" src="{{imgUrl}}" />
+    <image class="btn" src="{{playing?imgPause:imgPlay}}" bindtap="onPlay"/>
+  </view>
+  <view class="controll">
+    <button size="mini" bindtap="musicPrev" disabled="{{disabledPrev}}">上一首</button>
+    <button size="mini" bindtap="musicNext" disabled="{{disabledNext}}">下一首</button>
+  </view>
+</view>
