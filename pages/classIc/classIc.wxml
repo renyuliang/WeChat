@@ -16,7 +16,7 @@
   <button bindtap="toStorage">缓存demo</button>
 </view>
 <view>
-  <button bindtap="toRoll">滚动到底部</button>
+  <button bindtap="toRoll">滚动到底部(下拉刷新，上拉加载)</button>
 </view>
 <view>
   <button bindtap="toUserInfo">获取用户信息</button>
@@ -32,4 +32,13 @@
 </view>
 <view>
   <button bindtap="tochangeImg">转化页面为图片保存</button>
+</view>
+<view>
+  <button bindtap="toTabar">顶部选项卡（scroll-view 下拉）</button>
+</view>
+<view>
+  <button bindtap="toSearch">搜索组件 实例</button>
+</view>
+<view>
+  <button bindtap="toLazyLoad">图片懒加载</button>
 </view>

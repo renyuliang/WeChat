@@ -1,0 +1,24 @@
+<!--components/search/search-cmp.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="search-container">
+      <image class="icon" src="../images/search.png" />
+      <input placeholder-class='in-bar' placeholder='书籍名' class='bar' bind:confirm="onConfirm" bindinput="onInput" value="{{inputVal}}" auto-focus="true" />
+      <image bind:tap="onDelete" class="cancel-img" src="../images/cancel.png" wx:if="{{showImg}}" />
+      <image bind:tap="onDelete" class="cancel-img" wx:if="{{!showImg}}" />
+    </view>
+    <view class='cancel' bind:tap="onCancel">取消</view>
+  </view>
+  <view class="history">
+    <view class="title">
+      <view class="chunk"></view>
+      <text>历史搜索</text>
+    </view>
+    <view class="tags">
+      <block wx:for="{{historyKeys}}" wx:key="index">
+        <v-tag bind:tapping="onTapping" text="{{item}}" />
+      </block>
+    </view>
+  </view>
+</view>
+<v-loading class="loading-center" wx:if="{{loadingCenter}}" />

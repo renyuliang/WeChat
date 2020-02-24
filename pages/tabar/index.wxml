@@ -1,0 +1,22 @@
+<view class="tabar">
+  <scroll-view class="scroll-h" scroll-with-animation="{{true}}" scroll-x="{{true}}" scroll-into-view="{{scrollInto}}">
+    <block wx:for="{{cardList}}" wx:key="id">
+      <view class="tab-item" id="{{item.id}}" data-current="{{index}}" bindtap="ontabtap">
+        <text class="{{['tab-item-title',tabIndex==index?'titleActive':'']}}">{{item.name}}</text>
+      </view>
+    </block>
+  </scroll-view>
+  <swiper class="swiper-box" style="flex:1" current="{{tabIndex}}" duration="{{300}}" bindchange="changeSwiper">
+    <block wx:for="{{cardList}}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <scroll-view class="scrollList" scroll-y="true" enableBackToTop="true" bindscrolltolower="rollBottom">
+          <block wx:for="{{item.children}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
+            <view class="swiper-content">{{item2.value}}</view>
+          </block>
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <v-loading class="center" wx:if="{{showloadingCenter}}" />
+  <v-loading class="bottom" wx:if="{{showloadingBottom}}" />
+</view>

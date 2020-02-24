@@ -1,0 +1,72 @@
+/* pages/tabar/index.wxss */
+page {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.scroll-h {
+  width: 750rpx;
+  height: 90rpx;
+  white-space: nowrap;
+}
+
+.tab-item {
+  display: inline-block;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 34rpx;
+  padding-right: 34rpx;
+}
+
+.tab-item-title {
+  color: #555;
+  font-size: 32rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.titleActive {
+  color: #007aff;
+}
+.swiper-item{
+  border-top: 1rpx solid #000;
+}
+.swiper-item, .scrollList {
+  display: flex;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 750rpx;
+}
+.swiper-content{
+  margin-bottom: 500rpx;
+}
+
+/* 加载条 */
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.bottom {
+  margin-bottom: 20rpx;
+}

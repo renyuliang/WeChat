@@ -1,0 +1,8 @@
+/* pages/searchPage/index.wxss */
+.container-input{
+  padding: 50rpx;
+}
+.demo-input{
+  border: 1px solid #000;
+  border-radius: 20rpx;
+}

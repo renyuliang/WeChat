@@ -1,6 +1,6 @@
 <!--pages/rollBottom/index.wxml-->
 <view>
-  <block wx:for="{{list}}">
+  <block wx:for="{{list}}" wx:key="{{index}}">
     <image src="../../components/images/imgBack.png" style="width:{{widthImg}}px" bindtap="searchImg"></image>
     <text>点击图片可查看大图：{{index}}</text>
   </block>

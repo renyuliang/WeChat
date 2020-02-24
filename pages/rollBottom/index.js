@@ -77,14 +77,23 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function() {
-
+    wx.showNavigationBarLoading() //显示加载
+    setTimeout(()=>{
+      this.setData({
+        list: 5
+      })
+      wx.hideNavigationBarLoading() // 隐藏加载
+      wx.stopPullDownRefresh() // 停止下拉
+      wx.showToast({
+        title: '刷新成功',
+      })
+    }, 2000)
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function() {
-    console.log('生产随机字符串：', this.randRo(8))
     this.setData({
       showloadingBottom: true
     })
@@ -93,7 +102,6 @@ Page({
         showloadingBottom: false,
         list: this.data.list + 5
       })
-      console.log(this.data.list)
     }, 2000)
   },
 

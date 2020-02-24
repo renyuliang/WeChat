@@ -129,7 +129,7 @@ Page({
     // Promise.race(), 竞争，及对比哪个请求率先完成，则返回先完成的请求的结果,调用方式 和 Promise.all()相同
   },
   navigateToNext(event) {
-    let id = event.currentTarget.id
+    let id = event.currentTarget.dataset.id
     wx.navigateTo({
       url: `/pages/getOption/index?id=${id}`,
     })

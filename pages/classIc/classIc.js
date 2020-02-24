@@ -182,6 +182,21 @@ Page({
       url: `/pages/changeToImg/index`,
     })
   },
+  toTabar(){
+    wx.navigateTo({
+      url: `/pages/tabar/index`,
+    })
+  },
+  toSearch(){
+    wx.navigateTo({
+      url: `/pages/searchPage/index`,
+    })
+  },
+  toLazyLoad(){
+    wx.navigateTo({
+      url: `/pages/lazyLoad/index`,
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

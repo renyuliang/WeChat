@@ -1,4 +1,4 @@
 <!--pages/promise/index.wxml-->
 <block wx:for="{{list}}">
-  <button size="mini" id="{{item.id}}" bindtap="navigateToNext">{{item.name}}</button>
+  <button size="mini" data-id="{{item.id}}" bindtap="navigateToNext">{{item.name}}</button>
 </block>

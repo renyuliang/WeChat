@@ -15,6 +15,7 @@ class setStorage {
     const has = arr.includes(word)
     if (!has) {
       if (arr.length >= this.maxLength) {
+        // 删除组件 末尾元素
         arr.pop()
       }
       arr.unshift(word)

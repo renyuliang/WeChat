@@ -10,7 +10,10 @@
     "pages/outer/index",
     "pages/waterfall/index",
     "pages/dialogModal/index",
-    "pages/changeToImg/index"
+    "pages/changeToImg/index",
+    "pages/tabar/index",
+    "pages/searchPage/index",
+    "pages/lazyLoad/index"
   ],
   "requiredBackgroundModes": [
     "audio",

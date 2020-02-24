@@ -105,10 +105,10 @@ Page({
     }
   },
   bindbt: function () {
-    // doommList.push(new Doomm("这是我的弹幕", Math.ceil((Math.random() * that.data.phoneHeight)), 10, getRandomColor()));
-    // this.setData({
-    //   doommData: doommList
-    // })
+    doommList.push(new Doomm("这是我的弹幕", Math.ceil((Math.random() * that.data.phoneHeight)), 10, getRandomColor()));
+    this.setData({
+      doommData: doommList
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
