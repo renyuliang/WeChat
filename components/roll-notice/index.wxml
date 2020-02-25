@@ -1,0 +1,10 @@
+<!--滚动公告-->
+<view>
+  <swiper class="swiper" autoplay="{{true}}" interval="{{3000}}" vertical="{{true}}" circular="{{true}}">
+    <block wx:for="{{NoticeList}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">{{item}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

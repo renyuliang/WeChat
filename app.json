@@ -13,7 +13,9 @@
     "pages/changeToImg/index",
     "pages/tabar/index",
     "pages/searchPage/index",
-    "pages/lazyLoad/index"
+    "pages/lazyLoad/index",
+    "pages/rollNotice/index",
+    "pages/form/index"
   ],
   "requiredBackgroundModes": [
     "audio",

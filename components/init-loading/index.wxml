@@ -1,4 +1,4 @@
-<!--components/loading/index.wxml-->
+<!--加载效果-->
 <view class="container">
   <text class="loading moveing"></text>
 </view>

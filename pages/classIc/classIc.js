@@ -197,6 +197,16 @@ Page({
       url: `/pages/lazyLoad/index`,
     })
   },
+  toMove(){
+    wx.navigateTo({
+      url: `/pages/rollNotice/index`,
+    })
+  },
+  toForm(){
+    wx.navigateTo({
+      url: `/pages/form/index`,
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

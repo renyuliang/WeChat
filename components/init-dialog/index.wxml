@@ -1,9 +1,4 @@
-<!-- <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
- 
-<view class="modalDlg" wx:if="{{showModal}}">
-    <text>欢迎来到模态对话框~</text>
-    <button bindtap="exit">点我可以关掉对话框</button>
-</view> -->
+<!-- 自定义弹窗 -->
 
 <view class='modal-mask' wx:if='{{showModal}}' catchtouchmove="preventTouchMove">
   <view class='modal-content'>

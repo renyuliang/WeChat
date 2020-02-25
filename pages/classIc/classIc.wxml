@@ -42,3 +42,9 @@
 <view>
   <button bindtap="toLazyLoad">图片懒加载</button>
 </view>
+<view>
+  <button bindtap="toMove">滚动公告</button>
+</view>
+<view>
+  <button bindtap="toForm">form 表单验证</button>
+</view>

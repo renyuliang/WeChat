@@ -1,4 +1,4 @@
-<!--components/search/search-cmp.wxml-->
+<!--搜索组件-->
 <view class="container">
   <view class="header">
     <view class="search-container">

@@ -1,0 +1,6 @@
+<!--pages/rollNotice/index.wxml-->
+<view class="container">
+  <view class="notice">
+    <v-notice NoticeList="{{NoticeList}}" />
+  </view>
+</view>
