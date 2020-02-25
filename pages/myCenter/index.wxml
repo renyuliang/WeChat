@@ -1,0 +1,2 @@
+<!--pages/myCenter/index.wxml-->
+<v-imgList centerList="{{centerList}}" bind:navigateTo="navigateTo" />

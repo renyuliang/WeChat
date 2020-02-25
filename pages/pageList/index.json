@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "v-pagelist":"/components/pageList/index",
+    "v-loading": "/components/init-loading/index"
+  }
+}

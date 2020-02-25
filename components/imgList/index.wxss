@@ -1,0 +1,29 @@
+/* components/imgList/index.wxss */
+page{
+  background: #fff;
+}
+.list-item{
+  padding: 30rpx;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+}
+.name{
+  font-size: 32rpx;
+}
+.icon{
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  border-top:1px solid #999;
+  border-right:1px solid #999;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 40%;
+  right: 0;
+}

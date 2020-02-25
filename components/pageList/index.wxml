@@ -1,0 +1,16 @@
+<!--列表页组件-->
+<view class="container">
+<!-- // 模拟加载更多 -->
+  <block wx:for="{{listData}}" wx:if="{{index < showlength}}" wx:key="*this">
+    <view class="list" data-item="{{item}}" bindtap="tapDetail">
+      <image class="list-img" src="{{item.cover}}"></image>
+      <view class="list-info">
+        <view class="info-content">{{item.title}}</view>
+        <view class="info-news">
+          <view class="text new-left">{{item.author_name}}</view>
+          <view class="text new-right">{{item.published_at}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

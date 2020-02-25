@@ -15,7 +15,9 @@
     "pages/searchPage/index",
     "pages/lazyLoad/index",
     "pages/rollNotice/index",
-    "pages/form/index"
+    "pages/form/index",
+    "pages/pageList/index",
+    "pages/myCenter/index"
   ],
   "requiredBackgroundModes": [
     "audio",
@@ -30,6 +32,10 @@
       {
         "pagePath": "pages/promise/index",
         "text": "promise http应用"
+      },
+      {
+        "pagePath": "pages/myCenter/index",
+        "text": "个人中心"
       }
     ]
   },

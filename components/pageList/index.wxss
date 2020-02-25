@@ -1,0 +1,54 @@
+/* components/pageList/index.wxss */
+
+page {
+  width: 100%;
+}
+
+.container {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.list {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #c8c7cc;
+}
+
+.list-img {
+  width: 180rpx;
+  height: 140rpx;
+}
+
+.list-info {
+  margin-left: 20rpx;
+  
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.info-content {
+  width: 100%;
+  height: 80rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+}
+
+.info-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 26rpx;
+  color: #8f8f94;
+}

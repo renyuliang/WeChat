@@ -1,0 +1,9 @@
+<!--components/imgList/index.wxml-->
+<view class="list-item">
+  <block wx:for="{{centerList}}" wx:key="*this">
+    <view class="item" data-path="{{item.path}}" bindtap="navigateTo">
+      <view class="name">{{item.name}}</view>
+      <view class="icon"></view>
+    </view>
+  </block>
+</view>

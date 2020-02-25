@@ -1,0 +1,29 @@
+/* pages/pageList/index.wxss */
+
+.listCon {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.imgCon {
+  height: 360rpx;
+  overflow: hidden;
+  position: relativ e;
+  background-color: #ccc;
+}
+
+.listImg {
+  width: 100%;
+  height: 480rpx;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.bottom {
+  margin-bottom: 50rpx;
+}

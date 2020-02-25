@@ -308,6 +308,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    console.log(options)
     wx.getSystemInfo({ // 获取页面可视区域的高度
       success: (res) => {
         this.setData({

@@ -16,7 +16,7 @@
   <button bindtap="toStorage">缓存demo</button>
 </view>
 <view>
-  <button bindtap="toRoll">滚动到底部(下拉刷新，上拉加载)</button>
+  <button bindtap="toRoll">列表图片 可查看大图</button>
 </view>
 <view>
   <button bindtap="toUserInfo">获取用户信息</button>
@@ -47,4 +47,7 @@
 </view>
 <view>
   <button bindtap="toForm">form 表单验证</button>
+</view>
+<view>
+  <button bindtap="toPageList">列表页（上拉加载，下拉刷新）</button>
 </view>

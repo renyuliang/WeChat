@@ -4,6 +4,4 @@
     <image src="../../components/images/imgBack.png" style="width:{{widthImg}}px" bindtap="searchImg"></image>
     <text>点击图片可查看大图：{{index}}</text>
   </block>
-  <v-loading class="center" wx:if="{{showloadingCenter}}"/>
-  <v-loading class="bottom" wx:if="{{showloadingBottom}}"/>
 </view>

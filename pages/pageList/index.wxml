@@ -1,0 +1,9 @@
+<!--列表页-->
+<view class="listCon">
+  <view class="imgCon">
+    <image class="listImg" src="https://img.36krcdn.com/20200224/v2_7b05cfa0dcc14a9daa84cd37802d12b1_img_png"></image>
+  </view>
+  <v-pagelist listData="{{getlist}}" showlength="{{showlength}}" bind:getDetail="getDetail"/>
+</view>
+<v-loading class="center" wx:if="{{showloadingCenter}}"/>
+<v-loading class="bottom" wx:if="{{showloadingBottom}}"/>
