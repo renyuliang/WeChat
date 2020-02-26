@@ -16,8 +16,18 @@ Page({
       },
       {
         name: '选项卡',
-        path: '/pages/tabar/index'
-      }
+        path: null,
+        children: [
+          {
+            name: '公告',
+            path: '/pages/rollNotice/index'
+          },
+          {
+            name: '弹幕',
+            path: '/pages/waterfall/index'
+          }
+        ]
+      },
     ]
   },
 

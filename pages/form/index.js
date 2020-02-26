@@ -20,7 +20,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
 
   },
   // 去掉空格
@@ -40,8 +40,8 @@ Page({
     this.setObj(e)
     this.checkPhone(e.detail.value)
   },
-  checkPhone(e){
-    verify.vPhone(e, '手机号码为11位','手机号码有误')
+  checkPhone(e) {
+    verify.vPhone(e, '手机号码为11位', '手机号码有误')
   },
   // 多选
   initChange(e) {
@@ -62,7 +62,7 @@ Page({
     })
   },
   // 地区选择
-  bindRegionChange: function (e) {
+  bindRegionChange: function(e) {
     this.setObj(e)
     this.setData({
       'obj.area': e.detail.value
@@ -87,67 +87,66 @@ Page({
     }
     // 爱好
     if (!this.data.obj.loves.length) {
-      verify.vCheckbox(this.data.obj.loves,'最少选择一项')
+      verify.vCheckbox(this.data.obj.loves, '最少选择一项')
       return false
     }
     console.log(e.detail.value)
   },
   // 重置
   formReset(e) {
-    this.data.obj.name=''
+    this.data.obj.name = ''
     this.data.obj.phone = ''
     this.data.obj.loves = []
     this.data.obj.date = ''
     this.data.obj.choseIndex = 0
     this.data.obj.area = []
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

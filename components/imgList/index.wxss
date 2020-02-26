@@ -1,11 +1,14 @@
 /* components/imgList/index.wxss */
-page{
+
+page {
   background: #fff;
 }
-.list-item{
+
+.list-item {
   padding: 30rpx;
 }
-.item{
+
+.item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,17 +16,42 @@ page{
   line-height: 100rpx;
   position: relative;
 }
-.name{
+
+.name {
   font-size: 32rpx;
 }
-.icon{
+
+.icon {
   display: inline-block;
   width: 20rpx;
   height: 20rpx;
-  border-top:1px solid #999;
-  border-right:1px solid #999;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
   transform: rotate(45deg);
   position: absolute;
   top: 40%;
+  right: 6rpx;
+}
+
+.down {
+  transform: rotate(135deg);
   right: 0;
+}
+
+.up {
+  transform: rotate(-45deg);
+  right: 0;
+}
+
+.hidden-body {
+  height: 0;
+  overflow: hidden;
+}
+.show{
+  height: auto;
+  transition: height .2s;
+}
+.hidden {
+  height: 0;
+  transition: height .2s;
 }
