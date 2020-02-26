@@ -1,0 +1,2 @@
+<!--pages/moveDelete/index.wxml-->
+<v-movedelete items="{{items}}"/>

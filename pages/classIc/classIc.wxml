@@ -51,3 +51,6 @@
 <view>
   <button bindtap="toPageList">列表页（上拉加载，下拉刷新）</button>
 </view>
+<view>
+  <button bindtap="tomovedelete">列表左滑删除</button>
+</view>

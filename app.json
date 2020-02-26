@@ -17,7 +17,8 @@
     "pages/rollNotice/index",
     "pages/form/index",
     "pages/pageList/index",
-    "pages/myCenter/index"
+    "pages/myCenter/index",
+    "pages/moveDelete/index"
   ],
   "requiredBackgroundModes": [
     "audio",
