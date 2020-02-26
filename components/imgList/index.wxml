@@ -1,5 +1,5 @@
 <!--components/imgList/index.wxml-->
-<view class="list-item sdfsdf">
+<view class="list-item">
   <view wx:for="{{centerList}}" wx:key="index">
     <!-- 有子菜单 -->
     <view wx:if="{{item.children.length > 0}}">

@@ -36,22 +36,23 @@ page {
 .down {
   transform: rotate(135deg);
   right: 0;
+  transition: all .4s;
 }
 
 .up {
   transform: rotate(-45deg);
   right: 0;
+  transition: all .4s;
 }
 
 .hidden-body {
-  height: 0;
   overflow: hidden;
 }
 .show{
-  height: auto;
-  transition: height .2s;
+  max-height: 300px;
+  transition: max-height .4s;
 }
 .hidden {
-  height: 0;
-  transition: height .2s;
+  max-height: 0;
+  transition: max-height .4s;
 }
