@@ -11,32 +11,32 @@
     </view>
     <view style="margin-bottom:20rpx">
       <label>爱好</label>
-      <checkbox-group name="loves" data-pro="loves" bindchange="initChange">
+      <checkbox-group name="loves" data-pro="loves">
         <checkbox value="读书"></checkbox>读书
         <checkbox value="写字"></checkbox>写字
       </checkbox-group>
     </view>
     <view style="margin-bottom:20rpx">
       <label>日期选择</label>
-      <picker mode="date" name="date" data-pro="date" value="{{obj.date}}" bindchange="bindDateChange">
+      <picker mode="date" name="date" data-pro="date" value="{{date}}" bindchange="bindDateChange">
         <view class="picker">
-          当前选择: {{obj.date}}
+          当前选择: {{date}}
         </view>
       </picker>
     </view>
     <view style="margin-bottom:20rpx">
       <label>普通选择（单选）</label>
-      <picker bindchange="bindPickerChange" name='choseIndex' data-pro="choseIndex" value="{{obj.choseIndex}}" range="{{array}}">
+      <picker bindchange="bindPickerChange" name='choseIndex' data-pro="choseIndex" value="{{choseIndex}}" range="{{array}}">
         <view class="picker">
-          当前选择：{{array[obj.choseIndex]}}
+          当前选择：{{array[choseIndex]}}
         </view>
       </picker>
     </view>
     <view style="margin-bottom:20rpx">
       <label>地区选择</label>
-      <picker mode="region" bindchange="bindRegionChange" name='area' data-pro="area" value="{{obj.area}}">
+      <picker mode="region" bindchange="bindRegionChange" name='area' data-pro="area" value="{{area}}">
         <view class="picker">
-          当前选择：{{obj.area[0]}}，{{obj.area[1]}}，{{obj.area[2]}}
+          当前选择：{{area[0]}}，{{area[1]}}，{{area[2]}}
         </view>
       </picker>
     </view>

@@ -217,6 +217,11 @@ Page({
       url: `/pages/moveDelete/index`,
     })
   },
+  toswiper(){
+    wx.navigateTo({
+      url: `/pages/swiper/index`,
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

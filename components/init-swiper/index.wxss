@@ -1,0 +1,61 @@
+/* components/tabar/index.wxss */
+/* .swiper{
+  display: flex;
+  flex-direction: column;
+}
+.swiper-item,.scrollList,.swiper-box{
+  display: flex;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 750rpx;
+  border-top: 1rpx solid #000;
+} */
+/* page{
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 1;
+}
+.scrollList{
+  display: flex;
+  flex: 1;
+}
+.swiper{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+} */
+/* .swiper{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.swiper-box,.swiper-item{
+  display: flex;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 750rpx;
+} */
+/* .swiper-content{
+  margin-bottom: 500rpx;
+} */
+
+/* 图片轮播 */
+.swiperImg{
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.img{
+  width: 100%;
+}

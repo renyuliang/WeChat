@@ -1,0 +1,3 @@
+<!--pages/swiper/index.wxml-->
+ <!-- 图片轮播 -->
+  <v-swiper swiper-img="swiper-img" swiper-view="swiper-view" cardList="{{cardImg}}" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}"></v-swiper>

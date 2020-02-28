@@ -1,0 +1,17 @@
+<!--components/tabar/index.wxml-->
+<view class="swiper">
+  <swiper class="swiper-box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" current="{{tabIndex}}" interval="{{interval}}" circular="{{circular}}" vertical="{{vertical}}" bindchange="changeSwiper">
+    <swiper-item class="swiper-item" wx:for="{{cardList}}" wx:key="index">
+      <!-- 自定义内容显示 -->
+      <scroll-view wx:if="{{item.children.length}}" class="scrollList" scroll-y="true" enableBackToTop="true" bindscrolltolower="rollBottom">
+        <slot name="content{{index}}"></slot>
+      </scroll-view>
+      <!-- 图片轮播 -->
+      <block wx:else>
+        <view class='swiperImg swiper-view'>
+          <image src="{{item.url}}" class="img swiper-img"></image>
+        </view>
+      </block>
+    </swiper-item>
+  </swiper>
+</view>

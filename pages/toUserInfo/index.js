@@ -1,4 +1,9 @@
 // pages/toUserInfo/index.js
+import {
+  getList
+} from '../../models/pageList.js'
+
+let getListData = new getList()
 Page({
 
   /**
@@ -13,14 +18,15 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     // 查看是否授权
     wx.getSetting({
-      success:res=>{
+      success: res => {
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success: (info) => {
+              console.log(info)
               this.setData({
                 userInfo: info.userInfo,
                 userBtn: true
@@ -30,6 +36,40 @@ Page({
         }
       }
     })
+    this.onLogin()
+  },
+  onLogin() {
+    wx.login({
+      success(res) {
+        console.log(res);
+        let code = res.code
+        let params = {
+          appid: 'wx0723e6f3723feef7',
+          secret: '7c020c02f78dc75cc86ce0cb5477e8cf',
+          js_code: code,
+          grant_type: 'authorization_code'
+        }
+        getListData.getPhone(params).then(res => {
+          console.log(res)
+        })
+        // wx.request({
+        //   url: 'https://api.weixin.qq.com/sns/jscode2session',
+        //   method: "GET",
+        //   data: {
+        //     appid: 'wx0723e6f3723feef7',
+        //     secret: '7c020c02f78dc75cc86ce0cb5477e8cf',
+        //     js_code: code,
+        //     grant_type: 'authorization_code'
+        //   },
+        //   success: function (res) {
+        //     console.log(res);
+        //   }
+        // })
+      }
+    })
+  },
+  getPhoneNumber(e) {
+    console.log(e)
   },
   onGetUserInfo(e) {
     const userInfo = e.detail.userInfo
@@ -52,49 +92,49 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

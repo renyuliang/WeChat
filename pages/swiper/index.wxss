@@ -1,0 +1,10 @@
+/* pages/swiper/index.wxss */
+/* 图片父级样式 */
+.swiper-view{
+  border: 1px solid red;
+}
+/* 图片样式 */
+.swiper-img{
+  width: 100%;
+  cursor: pointer;
+}

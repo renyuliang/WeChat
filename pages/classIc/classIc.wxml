@@ -54,3 +54,6 @@
 <view>
   <button bindtap="tomovedelete">列表左滑删除</button>
 </view>
+<view>
+  <button bindtap="toswiper">轮播组件(可外部传入css)</button>
+</view>
