@@ -1,0 +1,13 @@
+/* components/countdown/index.wxss */
+.countdown{
+  display: inline-flex;
+}
+.bor {
+  display: inline-block;
+  line-height: 44rpx;
+  border-radius: 6rpx;
+  margin: 0 5rpx;
+  font-size: 24rpx;
+  border: 1px solid #000;
+  padding: 0 10rpx;
+}

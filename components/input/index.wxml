@@ -1,0 +1,11 @@
+<!--components/input/index.wxml-->
+<!-- input -->
+<view class="inputContainer outinput" wx:if="{{initType === 'text'}}">
+  <input placeholder="{{placeholder}}" value="{{inputName}}" class="input" bindinput="onInput" maxlength="{{inputLength}}"/>
+  <text class="length">{{savelength}}/{{inputLength}}</text>
+</view>
+<!-- textarea -->
+<view class="inputContainer outtextarea" wx:if="{{initType === 'textarea'}}">
+  <textarea placeholder="{{placeholder}}" value="{{inputName}}" class="textarea" bindinput="onInput" maxlength="{{inputLength}}"/>
+  <text class="length right">{{savelength}}/{{inputLength}}</text>
+</view>

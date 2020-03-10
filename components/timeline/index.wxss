@@ -1,0 +1,55 @@
+/* components/timeline/index.wxss */
+
+.container {
+  padding: 20rpx;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.line:first-child .lineIcon::before{
+  bottom: 200%;
+}
+.line:last-child .lineIcon::after{
+  height: 0;
+}
+
+.lineDate {
+  flex-shrink: 0;
+  width: 180rpx;
+}
+
+.lineIcon {
+  flex-shrink: 0;
+  position: relative;
+  width: 30rpx;
+  height: 30rpx;
+  top: 6rpx;
+  margin: 0 15rpx;
+  border-radius: 50%;
+  background-color: #bbb;
+}
+.light{
+  background-color: #1AAD19;
+}
+.lineIcon::before{
+  bottom: 100%;
+  content: '';
+  width: 1rpx;
+  height: 100vh;
+  background-color: #bbb;
+  position: absolute;
+  left: 15rpx;
+}
+.lineIcon::after{
+  content: '';
+  width: 1rpx;
+  height: 100vh;
+  background-color: #bbb;
+  position: absolute;
+  top:6rpx;
+  left: 15rpx;
+}

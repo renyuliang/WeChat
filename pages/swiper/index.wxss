@@ -7,4 +7,6 @@
 .swiper-img{
   width: 100%;
   cursor: pointer;
+  /* 图片高度计算  屏幕width*图片宽度/图片高度,及 screenWidth*imgWidht/imgHeight */
+  height: calc(100vw*915/915);
 }

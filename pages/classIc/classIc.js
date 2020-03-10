@@ -82,6 +82,17 @@ Page({
     // })
   },
 
+  jumpTo(e){
+    wx.pageScrollTo({
+      selector: "#"+e.target.dataset.id,
+      success(e){
+        wx.showToast({
+          title: e.errMsg,
+        })
+      }
+    })
+  },
+
   // 外部页面，点击调用的组件 自定义事件
   // 点赞事件
   clickLike: function (event) {
@@ -152,11 +163,6 @@ Page({
       url: `/pages/storage/index`,
     })
   },
-  toRoll() {
-    wx.navigateTo({
-      url: `/pages/rollBottom/index`,
-    })
-  },
   toUserInfo() {
     wx.navigateTo({
       url: `/pages/toUserInfo/index`,
@@ -220,6 +226,36 @@ Page({
   toswiper(){
     wx.navigateTo({
       url: `/pages/swiper/index`,
+    })
+  },
+  tofalls(){
+    wx.navigateTo({
+      url: `/pages/falls/index`,
+    })
+  },
+  tocountdown(){
+    wx.navigateTo({
+      url: `/pages/countdown/index`,
+    })
+  },
+  totimeline(){
+    wx.navigateTo({
+      url: `/pages/timeline/index`,
+    })
+  },
+  toupload(){
+    wx.navigateTo({
+      url: `/pages/upload/index`,
+    })
+  },
+  tocheckgroup(){
+    wx.navigateTo({
+      url: `/pages/checkgroup/index`,
+    })
+  },
+  toinput(){
+    wx.navigateTo({
+      url: `/pages/input/index`,
     })
   },
   /**

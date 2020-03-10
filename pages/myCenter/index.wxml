@@ -1,2 +1,11 @@
 <!--pages/myCenter/index.wxml-->
-<v-imgList centerList="{{centerList}}" bind:navigateTo="navigateTo" />
+<v-imgList centerList="{{centerList}}" bind:navigateTo="navigateTo">
+  <block wx:for="{{centerList.length}}">
+    <view slot="info{{index}}" wx:if="{{index === 0}}" style="margin-right:40rpx;">
+      {{centerList[0].name}}
+    </view>
+    <view slot="info{{index}}" wx:if="{{index === 1}}" style="margin-right:40rpx;">
+      <button size="small" catchtap="renz">去认证</button>
+    </view>
+  </block>
+</v-imgList>

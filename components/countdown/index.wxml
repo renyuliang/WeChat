@@ -1,0 +1,7 @@
+<!--components/countdown/index.wxml-->
+<view class="countdown">
+  <text class="bor">{{countDown[0]}}</text>天
+  <text class="bor">{{countDown[1]}}</text>时
+  <text class="bor">{{countDown[2]}}</text>分
+  <text class="bor">{{countDown[3]}}</text>秒
+</view>

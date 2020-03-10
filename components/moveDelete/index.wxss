@@ -8,6 +8,9 @@
   width: 100%;
   overflow: hidden;
 }
+.touch-item:first-child{
+  border-bottom: 1rpx solid #ccc;
+}
 
 .content {
   width: 100%;

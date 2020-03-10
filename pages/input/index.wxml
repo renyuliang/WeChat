@@ -1,0 +1,11 @@
+<!--pages/input/index.wxml-->
+<view style="width:50%;">
+  <view>普通input</view>
+  <v-input placeholder="{{'测试看看'}}" inputLength="{{20}}" bind:value="getInput" />
+  <view>普通textarea</view>
+  <v-input initType="{{'textarea'}}" placeholder="{{'测试看看'}}" inputLength="{{50}}" bind:value="getTextarea" />
+  <!-- 小数点输入框 -->
+  <view>小数点输入框</view>
+  <input style="border:1px solid #ccc;" type="digit" value="{{inputMoney}}" bindinput="getInputDigit"/>
+  <button bindtap="btn">测试</button>
+</view>

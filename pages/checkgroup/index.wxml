@@ -1,0 +1,19 @@
+<!--pages/checkgroup/index.wxml-->
+<view class="checkgroup">
+  <view wx:for="{{checkboxArr}}" wx:key="index" class="checkOut">
+    <checkbox-group>
+      <view class="title">{{item.title}}</view>
+      <view class="checkIn" wx:for="{{item.children}}" wx:for-index="index2" wx:for-item="v" wx:key="index2" bindtap='checkbox' data-indexp="{{index}}" data-indexc="{{index2}}">
+        <checkbox class="scale" value="{{v.value}}" checked="{{v.checked}}" />
+        <label class="label">{{v.name}}</label>
+      </view>
+    </checkbox-group>
+  </view>
+  <view wx:for="{{result}}" wx:key="index">
+    <text>第{{index+1}}的正确答案是：{{item.correctList}}，你选择的答案是：{{item.saveQuestion}}，得分：{{item.saveCount}}</text>
+  </view>
+  <view>
+    总分是：{{sumCount}}
+  </view>
+  <button type='primary' bindtap='confirm'>提交</button>
+</view>

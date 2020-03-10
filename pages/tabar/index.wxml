@@ -18,5 +18,5 @@
     </block>
   </swiper>
   <v-loading class="center" wx:if="{{showloadingCenter}}" />
-  <v-loading class="bottom" wx:if="{{showloadingBottom}}" />
+  <v-loading isCenter="{{false}}" wx:if="{{showloadingBottom}}" />
 </view>

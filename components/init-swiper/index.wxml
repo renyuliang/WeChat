@@ -9,7 +9,7 @@
       <!-- 图片轮播 -->
       <block wx:else>
         <view class='swiperImg swiper-view'>
-          <image src="{{item.url}}" class="img swiper-img"></image>
+          <image src="{{item.url}}" mode="widtthFix" class="img swiper-img"></image>
         </view>
       </block>
     </swiper-item>

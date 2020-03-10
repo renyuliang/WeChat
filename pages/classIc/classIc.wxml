@@ -8,15 +8,14 @@
 <view>
   <v-music src="{{musicSrc}}" title="{{musicTitle}}" srcIndex="{{musicIndex}}" srctotal="{{musicTotal}}" imgUrl="{{musicImgUrl}}" bind:musicPrev="musicPrev" bind:musicNext="musicNext"/>
 </view>
-
+<view>
+  <button data-id="tab1" bindtap="jumpTo">滚动到指定位置</button>
+</view>
 <view>
   <button bindtap="toWXS">wxs应用</button>
 </view>
 <view>
   <button bindtap="toStorage">缓存demo</button>
-</view>
-<view>
-  <button bindtap="toRoll">列表图片 可查看大图</button>
 </view>
 <view>
   <button bindtap="toUserInfo">获取用户信息</button>
@@ -25,7 +24,7 @@
   <button bindtap="tobaidu">小程序 应用h5</button>
 </view>
 <view>
-  <button bindtap="towaterfall">瀑布流效果（弹幕循环展示）</button>
+  <button bindtap="towaterfall">弹幕循环展示</button>
 </view>
 <view>
   <button bindtap="tomodal">常用弹出层和提示信息</button>
@@ -56,4 +55,22 @@
 </view>
 <view>
   <button bindtap="toswiper">轮播组件(可外部传入css)</button>
+</view>
+<view>
+  <button bindtap="tofalls">瀑布流</button>
+</view>
+<view>
+  <button bindtap="tocountdown" id="tab1">倒计时</button>
+</view>
+<view>
+  <button bindtap="totimeline">时间轴</button>
+</view>
+<view>
+  <button bindtap="toupload">上传图片</button>
+</view>
+<view>
+  <button bindtap="tocheckgroup">答题模块</button>
+</view>
+<view>
+  <button bindtap="toinput">input 字符统计</button>
 </view>

@@ -23,6 +23,7 @@ Page({
   showTips() {
     wx.showToast({
       title: 'good',
+      icon: 'none'
     })
   },
   showLoad(){

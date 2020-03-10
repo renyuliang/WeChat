@@ -1,0 +1,8 @@
+<!--components/timeline/index.wxml-->
+<view class="container">
+  <view wx:for="{{lineList}}" wx:key="index" class="line">
+    <view class="lineDate">{{item.date}}</view>
+    <view class="lineIcon {{index + 1 == lineList.length ? 'light':''}}"></view>
+    <view class="lineContent">{{item.content}}</view>
+  </view>
+</view>

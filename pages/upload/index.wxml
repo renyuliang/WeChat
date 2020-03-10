@@ -1,0 +1,7 @@
+<!--pages/upload/index.wxml-->
+<view>
+  <block wx:for="{{imageList}}" wx:key="index">
+    <image src="{{item}}" data-item="{{item}}" bindtap="searchImg"></image>
+  </block>
+  <v-upload bind:uploadList="uploadList" />
+</view>

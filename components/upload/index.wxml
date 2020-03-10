@@ -1,0 +1,4 @@
+<!--components/upload/index.wxml-->
+<view class="upload">
+  <button type="primary" bindtap="uploadFile">上传</button>
+</view>

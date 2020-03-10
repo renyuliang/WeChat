@@ -33,6 +33,20 @@ Page({
               })
             }
           })
+        } else {
+          wx.authorize({
+
+            scope: 'scope.record',
+
+            success() {
+
+              // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+
+              wx.startRecord()
+
+            }
+
+          })
         }
       }
     })
@@ -71,15 +85,15 @@ Page({
   getPhoneNumber(e) {
     console.log(e)
   },
-  onGetUserInfo(e) {
-    const userInfo = e.detail.userInfo
-    if (userInfo) {
-      this.setData({
-        userInfo: e.detail.userInfo,
-        userBtn: true
-      })
-    }
-  },
+  // onGetUserInfo(e) {
+  //   const userInfo = e.detail.userInfo
+  //   if (userInfo) {
+  //     this.setData({
+  //       userInfo: e.detail.userInfo,
+  //       userBtn: true
+  //     })
+  //   }
+  // },
   getUserInfo(e) {
     const userInfo = e.detail.userInfo
     if (userInfo) {
@@ -88,6 +102,7 @@ Page({
         userBtn: true
       })
     }
+    console.log(userInfo)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

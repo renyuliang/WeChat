@@ -1,0 +1,2 @@
+<!--pages/timeline/index.wxml-->
+<v-timeline lineList="{{lineList}}"/>

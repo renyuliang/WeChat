@@ -5,7 +5,10 @@
     <view wx:if="{{item.children.length > 0}}">
       <view class="item" data-index="{{index}}" bindtap="showChild">
         <view class="name">{{item.name}}</view>
-        <view class="['icon' {{!selected[index] ? 'down' : 'up'}}]"></view>
+        <view>
+          <slot name="info{{index}}"></slot>
+          <view class="['icon' {{!selected[index] ? 'down' : 'up'}}]"></view>
+        </view>
       </view>
       <!-- 下面是列表需要显示或隐藏的内容 -->
       <view class="hidden-body {{selected[index] ? 'show' : 'hidden'}}">
@@ -21,7 +24,10 @@
     <block wx:else>
       <view class="item" data-path="{{item.path}}" bindtap="navigateTo">
         <view class="name">{{item.name}}</view>
-        <view class="icon"></view>
+        <view>
+          <slot name="info{{index}}"></slot>
+          <view class="icon"></view>
+        </view>
       </view>
     </block>
   </view>

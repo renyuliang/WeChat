@@ -109,12 +109,13 @@ Page({
     // 如下 为 promise 的正确调用方法
     promiseDemo.demo('短袖')
     .then(res=>{
+      // this.setdata({list: res.result})
       console.log("第1次调用(promise的正确调用方式)", res.result)
       return promiseDemo.demo('长裙')
     })
     .then(res=>{
+      // this.setdata({list2: res.result})
       console.log("第2次调用(promise的正确调用方式)", res.result)
-      return promiseDemo.demo('长袖')
     })
     // 后面 则 以此类推
 

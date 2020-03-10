@@ -5,7 +5,6 @@
     "pages/getOption/index",
     "pages/wxs/index",
     "pages/storage/index",
-    "pages/rollBottom/index",
     "pages/toUserInfo/index",
     "pages/outer/index",
     "pages/waterfall/index",
@@ -18,7 +17,13 @@
     "pages/form/index",
     "pages/pageList/index",
     "pages/myCenter/index",
-    "pages/moveDelete/index"
+    "pages/moveDelete/index",
+    "pages/falls/index",
+    "pages/countdown/index",
+    "pages/timeline/index",
+    "pages/upload/index",
+    "pages/checkgroup/index",
+    "pages/input/index"
   ],
   "requiredBackgroundModes": [
     "audio",

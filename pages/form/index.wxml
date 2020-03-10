@@ -45,4 +45,8 @@
       <button formType="reset">Reset</button>
     </view>
   </form>
+  <view style="margin-bottom:20rpx">
+      <label>富文本传入值 显示</label>
+      <rich-text nodes="{{richText}}"></rich-text>
+    </view>
 </view>
