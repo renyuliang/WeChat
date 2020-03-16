@@ -150,6 +150,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
-
+    return {
+      title: '红领巾标题',
+      imageUrl: '/components/images/imgBack.png',
+      path: '/pages/classIc/classIc'
+    }
   }
 })

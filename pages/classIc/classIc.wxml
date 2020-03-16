@@ -74,3 +74,6 @@
 <view>
   <button bindtap="toinput">input 字符统计</button>
 </view>
+<view>
+  <button bindtap="tovcode">验证码</button>
+</view>

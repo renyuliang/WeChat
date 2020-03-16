@@ -1,0 +1,4 @@
+<!--components/vcode/index.wxml-->
+<view class="code">
+  <button size="mini" class="btn init-code" bindtap="getCode" disabled="{{disabled}}">{{codeText}}</button>
+</view>

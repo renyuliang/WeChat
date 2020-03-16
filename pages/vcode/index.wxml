@@ -1,0 +1,3 @@
+<!--pages/vcode/index.wxml-->
+<!-- <v-code init-code="initColor" /> 自定义颜色 -->
+<v-code codeUrl="{{'https://suggest.taobao.com/sug?code=utf-8'}}" phone="{{13219941001}}" />

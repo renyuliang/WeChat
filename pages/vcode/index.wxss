@@ -1,0 +1,5 @@
+/* pages/vcode/index.wxss */
+.initColor{
+  border:1px solid green !important;
+  color: green !important;
+}

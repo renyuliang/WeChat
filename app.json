@@ -23,7 +23,8 @@
     "pages/timeline/index",
     "pages/upload/index",
     "pages/checkgroup/index",
-    "pages/input/index"
+    "pages/input/index",
+    "pages/vcode/index"
   ],
   "requiredBackgroundModes": [
     "audio",
