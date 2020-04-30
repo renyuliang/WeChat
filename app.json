@@ -24,7 +24,10 @@
     "pages/upload/index",
     "pages/checkgroup/index",
     "pages/input/index",
-    "pages/vcode/index"
+    "pages/vcode/index",
+    "pages/cityIndex/index",
+    "pages/dialog/index",
+    "pages/searchLight/index"
   ],
   "requiredBackgroundModes": [
     "audio",
@@ -53,6 +56,11 @@
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取您的地理位置，请确认授权"
+    }
   },
   "sitemapLocation": "sitemap4.json"
 }

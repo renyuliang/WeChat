@@ -1,3 +1,4 @@
+// 最多存入10个字符串到数组中  --   特定业务
 class setStorage {
   key = 'answer'
   maxLength = 10

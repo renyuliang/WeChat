@@ -11,7 +11,7 @@
 <view>
   <button data-id="tab1" bindtap="jumpTo">滚动到指定位置</button>
 </view>
-<view>
+<view id="osdk">
   <button bindtap="toWXS">wxs应用</button>
 </view>
 <view>
@@ -76,4 +76,13 @@
 </view>
 <view>
   <button bindtap="tovcode">验证码</button>
+</view>
+<view>
+  <button bindtap="toCityIndex">城市定位索引</button>
+</view>
+<view>
+  <button bindtap="toDialog">弹出层从上往下展示</button>
+</view>
+<view>
+  <button bindtap="toSearchLight">搜索框搜索内容高亮显示</button>
 </view>

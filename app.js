@@ -124,6 +124,12 @@ App({
     // wx.navigateTo({
     //   url: '/pages/toUserInfo/index',
     // })
+    setTimeout(()=>{
+      wx.showToast({
+        title: 'sdfs',
+      })
+    },3000)
+    
   },
 
   /**

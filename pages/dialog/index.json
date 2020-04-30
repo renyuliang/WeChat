@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "init-downlist": "/components/init-downlist/index"
+  }
+}

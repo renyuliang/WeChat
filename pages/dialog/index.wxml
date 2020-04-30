@@ -1,0 +1,25 @@
+<!--pages/dialog/index.wxml-->
+<button type="primary" bindtap="showModal">显示1</button>
+<view wx:for="{{list}}">{{item}}</view>
+<init-downlist id="initdownlist" showDialog="{{showDialog}}" showHeight="{{showHeight}}">
+  <view slot="downlist">
+    <!-- <button type="primary" bindtap="hideModal">关闭1</button> -->
+    <view class="test1">
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+      <view>欧斯柯达费了上岛咖啡来得快塑料袋咖啡塑料袋咖啡塑料袋咖啡的水立方就</view>
+    </view>
+  </view>
+</init-downlist>

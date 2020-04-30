@@ -1,0 +1,139 @@
+page {
+  background: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30rpx;
+  margin: 0 20rpx;
+}
+
+.cancel-img {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10px;
+}
+
+.loading-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin: 0 5px 0 10px;
+}
+
+.in-bar {
+  color: #999;
+}
+
+.header {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  align-items: center;
+  z-index: 99;
+}
+
+.bar {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: inline-block;
+  height: 64rpx;
+  font-size: 14px;
+  flex: 2;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100rpx);
+}
+
+.myCity {
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 30rpx;
+  font-weight: bold;
+  padding:0 20rpx 12rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.cityInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+}
+.name{
+  font-size: 34rpx;
+}
+
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  color: blue;
+  padding: 0 !important;
+}
+
+.cityList{
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.listView{
+  flex: 1;
+  background-color: #fff;
+}
+.tab-item{
+  background-color: #f5f5f5;
+  line-height: 70rpx;
+  padding-left: 20rpx;
+}
+.tab-cityname{
+  padding-left: 20rpx;
+  border-bottom: 1px solid #ccc;
+  line-height: 70rpx;
+}
+.tab-cityname:last-child{
+  border-bottom: none;
+}
+.listIndex{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.viewOne{
+  text-align: center;
+  font-size: 24rpx;
+  padding: 0 24rpx;
+}
+
+.searchResult{
+  flex: 1;
+  background-color: #fff;
+}
+.noData{
+  font-size: 30rpx;
+  padding-top: 100rpx;
+  text-align: center;
+}

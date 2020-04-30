@@ -1,0 +1,47 @@
+<!--搜索组件-->
+<view class="container">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="search-container">
+      <image class="icon" src="images/search.png" />
+      <input placeholder-class='in-bar' placeholder='请输入城市名称' class='bar' bind:confirm="onConfirm" bindinput="onInput" value="{{inputVal}}" auto-focus="true" />
+      <image bind:tap="onDelete" class="cancel-img" src="images/cancel.png" wx:if="{{showImg}}" />
+      <image bind:tap="onDelete" class="cancel-img" wx:if="{{!showImg}}" />
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class="city">
+    <view class="myCity">
+      <view class="title">当前所在城市</view>
+      <view class="cityInfo">
+        <view class="name">{{currentCity}}</view>
+        <view>
+          <button size="mini" class="btn" bindtap="getUserLocation">重新定位</button>
+        </view>
+      </view>
+    </view>
+    <view class="cityList" wx:if="{{cityList.length}}">
+      <view class="listView">
+        <scroll-view class="scroll-h" style="height:{{getHeight}}px" scroll-with-animation="{{true}}" scroll-y="{{true}}" scroll-into-view="{{scrollInto}}">
+          <view wx:for="{{cityList}}" wx:key="index" id="{{item.title}}">
+            <view class="tab-item" id="{{item.id}}">{{item.title}}</view>
+            <view>
+              <block wx:for="{{item.child}}" wx:for-item="v" wx:for-index="index2" wx:key="index2">
+                <view class="tab-cityname">{{v.name}}</view>
+              </block>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="listIndex">
+        <view class="viewOne" wx:for="{{listIndex}}" wx:key="index" bindtap="tapToIndex" data-item="{{item}}">{{item}}</view>
+      </view>
+    </view>
+    <!-- 搜索结果 -->
+    <view class="searchResult" wx:else>
+      <view class="tab-item">搜索结果</view>
+      <view class="noData">暂无搜索数据</view>
+    </view>
+  </view>
+</view>
+<v-loading class="loading-center" wx:if="{{loadingCenter}}" />

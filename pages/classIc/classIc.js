@@ -263,6 +263,21 @@ Page({
       url: `/pages/vcode/index`,
     })
   },
+  toCityIndex(){
+    wx.navigateTo({
+      url: `/pages/cityIndex/index`,
+    })
+  },
+  toDialog(){
+    wx.navigateTo({
+      url: `/pages/dialog/index`,
+    })
+  },
+  toSearchLight(){
+    wx.navigateTo({
+      url: `/pages/searchLight/index`,
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -120,12 +120,12 @@ Page({
     // 后面 则 以此类推
 
     // promise.all() 的调用方式 并行请求（同时请求）
-    let demo1 = promiseDemo.demo('男裤')
-    let demo2 = promiseDemo.demo('女裤')
-    Promise.all([demo1,demo2])
-    .then(res=>{
-      console.log('Promise.all() 的调用方式（并行请求）:', res)
-    })
+    // let demo1 = promiseDemo.demo('男裤')
+    // let demo2 = promiseDemo.demo('女裤')
+    // Promise.all([demo1,demo2])
+    // .then(res=>{
+    //   console.log('Promise.all() 的调用方式（并行请求）:', res)
+    // })
 
     // Promise.race(), 竞争，及对比哪个请求率先完成，则返回先完成的请求的结果,调用方式 和 Promise.all()相同
   },

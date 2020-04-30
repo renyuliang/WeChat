@@ -1,0 +1,2 @@
+<!--pages/cityIndex/index.wxml-->
+<v-cityIndex url="{{'https://suggest.taobao.com/sug?code=utf-8'}}" />

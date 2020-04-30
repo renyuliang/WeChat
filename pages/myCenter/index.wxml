@@ -8,4 +8,5 @@
       <button size="small" catchtap="renz">去认证</button>
     </view>
   </block>
+  
 </v-imgList>
